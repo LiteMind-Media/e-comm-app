@@ -24,5 +24,8 @@ steps:
       - --platform=managed
       - --image=us-docker.pkg.dev/$PROJECT_ID/my-repository/cms:$SHORT_SHA
     timeout: 1800s
-    
+    options:
+      logging: CLOUD_LOGGING_ONLY
+      build:
+        logs_bucket: build.options.default_logs_bucket_behavior
 
