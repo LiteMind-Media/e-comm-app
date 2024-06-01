@@ -24,3 +24,5 @@ steps:
       - --platform=managed
       - --image=us-docker.pkg.dev/$PROJECT_ID/my-repository/cms:$SHORT_SHA
     timeout: 1800s
+    
+
